@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You need to create a cross-platform (android, iOS & Web) single-page application; Refer to the following Figma designs
 
-## Available Scripts
+### Note
+- <a href="https://github.com/jeyaseelan1998/Real-World-Project-4-CCBP">GitHub Repository</a>
+- Clone the project from gitHub repo, then
+- <code>npm install</code>
+- <code>npm start</code>
 
-In the project directory, you can run:
+## Design Details
 
-### `npm start`
+### Figma Design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://www.figma.com/file/CdQg7qzmPcEWGXZMzuHMh6/Assignment?node-id=0%3A1
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The category panel
 
-### `npm test`
+ - On Mobile: It should be visible on top
+ - On the Web: It should be visible on the left
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Design files
 
-### `npm run build`
+1. src/components/Header
+2. src/components/Sidebar
+3. src/components/Home
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Fuctionalities
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Scrolling Syncing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If the user scrolls the page, the category item should be selected based on the category list visible at the top of the page.
+- Adding/Removing an item to/from the cart
+- Data should be maintained using redux / context API 
+- On click of the + icon on an item,
+  - The item should get added to the cart. 
+  - +/- It should be a toggle button.
+  - if the item is added, the + button should be changed to a - button, as shown in the screenshot in Figma designs.
+- Vice versa for removing item from cart.
+## Resources
 
-### `npm run eject`
+### api
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Progressing...
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Libraries
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React icons
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### command
+<code>npm install react-icons</code>
 
-## Learn More
+## Asserts
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Images
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Name          |                                                    src                                                     | alt           |
+| ------------- | :--------------------------------------------------------------------------------------------------------: | ------------- |
+| Black berries | https://res.cloudinary.com/dj5c1rxzz/image/upload/v1707148423/com.food.e-commerce/uotblvxtk2cdk9rehlgu.png | black-berries |
+| Banana        | https://res.cloudinary.com/dj5c1rxzz/image/upload/v1707148423/com.food.e-commerce/pfv8xma9ghtaezje4gld.png | babana        |
+| Strawberry    | https://res.cloudinary.com/dj5c1rxzz/image/upload/v1707148423/com.food.e-commerce/upo0yqjhnb997tpsehqg.png | strawberry    |
+| Yogurt        | https://res.cloudinary.com/dj5c1rxzz/image/upload/v1707148423/com.food.e-commerce/axur2ioszm7o3unmjqcl.png | yogurt        |
 
-### Code Splitting
+### Colors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p style="background-color: #FFE475; color: #000; width: 90px; line-height: 40px; text-align: center;">#FFE475</p>
+<p style="background-color: #5DA9E9; color: #000; width: 90px; line-height: 40px; text-align: center;">#5DA9E9</p>
+<p style="background-color: #40D589; color: #000; width: 90px; line-height: 40px; text-align: center;">#40D589</p>
+<p style="background-color: #100E3A; color: #FFFF; width: 90px; line-height: 40px; text-align: center;">#100E3A</p>
+<p style="background-color: #FFFFFF; color: #000; width: 90px; line-height: 40px; text-align: center;">#FFFFFF</p>
+<p style="background-color: #737D94; color: #000; width: 90px; line-height: 40px; text-align: center;">#737D94</p>
+<p style="background-color: #B6BAC3; color: #000; width: 90px; line-height: 40px; text-align: center;">#B6BAC3</p>
 
-### Analyzing the Bundle Size
+### Font families
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Font family | Use case                  |
+| ----------- | ------------------------- |
+| Mortise     | Main heading, sub heading |
+| Mulish      | Other than heading        |
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- <a href="https://github.com/jeyaseelan1998">GitHub</a>
+- <a href="https://www.linkedin.com/in/jeyaseelanr/">Linkedin</a>
