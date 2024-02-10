@@ -8,6 +8,14 @@ You need to create a cross-platform (android, iOS & Web) single-page application
 - <code>npm install</code>
 - <code>npm start</code>
 
+### Live link
+
+https://e-commerce-food-ten.vercel.app/
+
+### Source code
+
+https://github.com/jeyaseelan1998/Real-World-Project-4-CCBP.git
+
 ## Design Details
 
 ### Figma Design
