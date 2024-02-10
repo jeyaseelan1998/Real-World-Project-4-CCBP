@@ -1,0 +1,36 @@
+.category-item-container {
+    list-style: none;
+
+}
+
+.category-heading-container {
+    display: flex;
+    align-items: center;
+}
+
+.category-heading {
+    margin: 0;
+    line-height: 42px;
+    font-family: "Mortise";
+    font-size: 30px;
+    transition: font-size .5s;
+}
+
+@media screen  and (max-width: 576px) {
+    .category-heading {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+.right-arrow-icon {
+    font-size: 23px;
+    margin-left: 15px;
+}
+
+.product-list-items {
+    padding-left: 0;
+    margin: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+}

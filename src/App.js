@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
 
-function App() {
+import Home from './components/Home'
+
+import CartContext from './context/CartContext'
+import './App.css'
+
+const App = () => {
+  const [cartList, setCartList] = useState([])
+
+  const addCartItem = (product) => {
+    setCartList(prevState => [...prevState, product])
+  }
+
+  const removeCartItem = (productId) => {
+    const filteredProducts = cartList.filter(each => each.id !== productId)
+    setCartList(filteredProducts)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <CartContext.Provider value={{
+      cartList,
+      addCartItem,
+      removeCartItem
+    }}>
+      <Home />
+    </CartContext.Provider>
+  )
 }
 
-export default App;
+export default App

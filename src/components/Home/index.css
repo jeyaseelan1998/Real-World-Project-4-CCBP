@@ -1,0 +1,31 @@
+/* font-family: 'Mortise', sans-serif; */
+/* font-family: 'Mulish', sans-serif; */
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.home-body-container {
+    flex: 1;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+@media screen and (min-width: 576px) {
+    .home-body-container {
+        flex-direction: row;
+    }
+}
+
+.categories-container {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+    flex: 1;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}

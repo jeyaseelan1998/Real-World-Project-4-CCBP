@@ -30,7 +30,9 @@ https://www.figma.com/file/CdQg7qzmPcEWGXZMzuHMh6/Assignment?node-id=0%3A1
 ### Scrolling Syncing
 
 If the user scrolls the page, the category item should be selected based on the category list visible at the top of the page.
-- Adding/Removing an item to/from the cart
+
+### Adding/Removing an item to/from the cart
+
 - Data should be maintained using redux / context API 
 - On click of the + icon on an item,
   - The item should get added to the cart. 

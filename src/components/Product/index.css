@@ -1,0 +1,64 @@
+.product-container {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.image-button-container {
+    position: relative;
+    align-self: center;
+}
+
+.product-image {
+    width: 120px;
+    height: 100px;
+}
+
+.product-price {
+    font-family: "Mulish";
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #100E3A;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.product-name {
+    font-family: "Mulish";
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #100E3A;
+    width: 120px;
+}
+
+.product-qty {
+    font-family: "Mulish";
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 5px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #B6BAC3;
+}
+
+.add-remove-btn {
+    height: 45px;
+    width: 45px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: #40D589;
+    color: #FFF;
+    font-size: 16px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}

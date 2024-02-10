@@ -1,0 +1,65 @@
+.header-container {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 280px;
+    background-color: #fff;
+    transition: background-color .5s;
+}
+
+@media screen and (min-width: 576px) {
+    .header-container {
+        background-color: #FFE475;
+    }
+}
+
+.website-logo-link {
+    color: black;
+    text-decoration: none;
+}
+
+.website-logo {
+    margin: 0;
+    font-family: "Mortise";
+    line-height: 28px;
+    font-size: 20px;
+    user-select: none;
+    transition: font-size .5s;
+}
+
+@media screen and (min-width: 576px) {
+    .website-logo {
+        font-size: 30px;
+        line-height: 42px;
+    }
+}
+
+.cart-btn {
+    height: 40px;
+    padding: 5px 20px 5px 25px;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transition: box-shadow 5s;
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: black;
+    margin-right: 10px;
+}
+
+.cart-count {
+    margin: 0;
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
